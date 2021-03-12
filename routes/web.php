@@ -46,3 +46,4 @@ Route::get('/order/single/{id}', 'Order\ViewController@single');
 Route::get('/order/edit/{id}', 'Order\ViewController@edit');
 Route::post('/order/edit/{id}', 'Order\PostController@save');
 Route::get('/order/delete/{id}', 'Order\PostController@delete');
+Route::get('/order/export', 'Order\ViewController@export');

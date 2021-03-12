@@ -6,6 +6,7 @@
 	<div class="col-10 px-0" id="admin-wrapper">
 		<div class="container-fluid">
 			<button type="button" class="btn btn-primary float-right mt-3" data-toggle="modal" data-target="#modal_tambah"><i class="fa fa-plus mr-2"></i>Tambah Baru</button>
+			<a href="{{url('order/export')}}" type="button" class="btn btn-success float-right mt-3 mr-1"><i class="fa fa-file mr-2"></i>Export Excell</a>
 			<h1 class="my-4">Transaksi Order</h1>
 			<table class="table table-striped table-bordered table-light">
 				<thead>

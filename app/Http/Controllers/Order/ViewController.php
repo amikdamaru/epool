@@ -26,5 +26,11 @@ class ViewController extends Controller
         $data['order'] = Order::find($id);
         return view('home.detail', $data);
     }
+
+    function export(){
+        
+        $data['order'] = Order::all();
+        return view('admin.order.export', $data);
+    }
     
 }
