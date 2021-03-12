@@ -11,9 +11,10 @@
 				<thead>
 					<tr>
 						<th>No</th>
+						<th>No Invoice</th>
 						<th>Nama Pemesan</th>
 						<th>Kolam Renang yang Dipesan</th>
-						<th>Harga Tiket per Orang</th>
+						<th>Pesan untuk Tanggal</th>
 						<th>Jumlah Orang</th>
 						<th>Total</th>
 						<th></th>
@@ -23,9 +24,10 @@
 					@forelse($order as $item)
 					<tr>
 						<td>{{$loop->iteration}}</td>
+						<td>#{{$item->id}}</td>
 						<td>{{$item->users->name ?? '(Data Tidak Ditemukan)'}}</td>
 						<td>{{$item->pool->name ?? '(Data Tidak Ditemukan)'}}</td>
-						<td>{{$item->pool->harga ?? '(Data Tidak Ditemukan)'}}</td>
+						<td>{{date('d F Y', strtotime($item->order_at)) ?? '(Data Tidak Ditemukan)'}}</td>
 						<td>{{$item->quantity ?? '(Data Tidak Ditemukan)'}}</td>
 						<td>@if($item->pool) {{$item->quantity * $item->pool->harga}} @else (Data Tidak Ditemukan) @endif</td>
 						<td>
@@ -36,7 +38,7 @@
 					</tr>
 					@empty
 					<tr>
-						<td colspan="7">
+						<td colspan="8">
 							<div class="py-50 text-center">
 								<h4>Belum Ada Transaksi yang Dilakukan</h4>
 							</div>

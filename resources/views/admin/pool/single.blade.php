@@ -9,8 +9,6 @@
         </div>      
         <div class="card-body">
             <div class="container">
-                {{csrf_field()}}
-                <input type="hidden" name="id" value="{{$pool->id}}" readonly>
                 <div class="row justify-content-center">
                     <div class="col-md-12">
                         <table class="table">
