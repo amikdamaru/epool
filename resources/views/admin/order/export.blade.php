@@ -1,6 +1,6 @@
 <table>
 	<tr>
-		<td>Data Transaksi Order E - Pool</td>
+		<td colspan="7">Data Transaksi Order E - Pool</td>
 	</tr>
 	<tr>
 		<td colspan="7"></td>
@@ -20,7 +20,7 @@
 		<td>#{{$item->id}}</td>
 		<td>{{$item->users->name ?? '(Data Tidak Ditemukan)'}}</td>
 		<td>{{$item->pool->name ?? '(Data Tidak Ditemukan)'}}</td>
-		<td>{{date('d F Y', strtotime($item->order_at)) ?? '(Data Tidak Ditemukan)'}}</td>
+		<td>{{date('d-m-Y', strtotime($item->order_at)) ?? '(Data Tidak Ditemukan)'}}</td>
 		<td>{{$item->quantity ?? '(Data Tidak Ditemukan)'}}</td>
 		<td>@if($item->pool) {{$item->quantity * $item->pool->harga}} @else (Data Tidak Ditemukan) @endif</td>
 	</tr>
