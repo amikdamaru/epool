@@ -1,0 +1,41 @@
+html, body {
+	height: 100%;
+}
+.title {
+	font-family: 'Nunito', sans-serif;
+	font-size: 84px;
+	margin-top: 80px;
+	text-align: center;
+}
+.subtitle {
+	font-family: 'Nunito', sans-serif;
+	font-size: 34px;
+	margin-bottom: 70px; 
+	text-align: center;
+}
+.mt-80{
+	margin-top: 80px;
+}
+.py-50{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.mt-25{
+	margin-top: 25px;
+}
+.admin-page{
+	min-height: 640px;
+	background-color: #173F5F;
+}
+.sidebar-item{
+	background-color: #173F5F;
+}
+.sidebar-item:hover{
+	background-color: black !important;
+}
+.sidebar-item:focus {
+  background-color: #003152;
+}
+#admin-wrapper{
+	background-color: #BDF2FF;
+}

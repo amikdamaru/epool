@@ -1,0 +1,10 @@
+- api
+- source js css untuk diakses offline
+- js select2
+- js datatable, fitur search, order, paginasi
+- membedakan crud user biasa dengan admin 
+- restriksi user yang berusaha akses dengan mengetik url
+- modal konfirmasi hapus
+- modal notifikasi tindakan sukses/gagal
+- trigger modal dengan id javascript agar tidak looping kodingannya
+- fitur user memesan 2 kolam renang dalam 1 order
