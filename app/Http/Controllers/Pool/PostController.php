@@ -52,6 +52,5 @@ class PostController extends Controller
             $this_pool = Pool::latest()->pluck('id')->first();
             return back();
         }
-
     }
 }
